@@ -1,0 +1,489 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+.navbar {
+    display: flex;
+    height: 13vw;
+    background-color: #0c2340;
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+}
+
+.logo {
+    margin: 0.5vw 0.5vw;
+    position: absolute;
+    top: 3.5vw;
+    left: 2vw;
+}
+
+.logoTop {
+    height: 6vw;
+    width: 6vw;
+}
+
+.collegeName {
+    color: rgb(218, 218, 218);
+    position: absolute;
+    top: 4vw;
+    left: 10vw;
+    font-size: 1.6vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.navContent {
+    position: absolute;
+    top: 1.5vw;
+    right: 2vw;
+}
+
+.navContent ul{
+    display: flex;
+    margin: 0vw 1vw;
+}
+
+.navContent li{
+    display: flex;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.navContent li a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    padding: 0.6vw 1vw;
+    font-size: 1.3vw;
+    transition: 0.3s;
+}
+
+.navContent li :hover {
+    background-color: #143865;
+    border-radius: 1vw;
+    color: white;
+    transform: scale(1.02);
+}
+
+.top {
+    background-color: #F1F1F1;
+    height: 45vw;
+    position: relative;
+}
+
+.navSection {
+    position: absolute;
+    top: -2.1vw;
+    right: 4vw;
+    background-color: white;
+}
+
+.navSection ul{
+    display: flex;
+    margin: 0.1vw 0.1vw;
+}
+
+.navSection li{
+    display: flex;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.navSection li a {
+    text-decoration: none;
+    color: black;
+    padding: 1vw 1.5vw;
+    font-size: 1.3vw;
+}
+
+.navSection li :hover {
+    background-color: #edf2f9;
+    border-bottom: 0.25vw solid #c1cddd;
+    transform: scale(1.05);
+}
+
+.imageSection {
+    background-image: url('img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    width: 60vw;
+    position: absolute;
+    top: 3.5vw;
+    right: 1vw;
+    border: 1px solid #7e7f80;
+}
+
+.contentSection {
+    position: absolute;
+    top: 14.5vw;
+    left:6vw;
+    font-size: 2vw;
+}
+
+.contentHeading {
+    padding: 10px;
+    font-size: 2.5vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,33.33%);
+    margin-top: 4vw;
+    margin-bottom: 8vw;
+    /* grid-column-gap: 10px; */
+}
+
+.imageContainer {
+    grid-row: 1/3;
+    max-width:inherit;
+    /* margin: 10px 0; */
+    transition: 0.3s;
+    display: grid;
+    grid-template-rows: 2;
+    margin:1vw 1vw;
+    position: relative;
+}
+
+.imageContainer:hover {
+    background-color: #e1e8f2;
+    border-bottom: 4px solid #c1cddd;
+    margin-bottom: -4px;
+    transform: scale(1.01);
+    /* cursor: pointer; */
+}
+
+.textContainer {
+    grid-column: 2/4;
+    width: 55vw;
+    margin-top: 4vw;
+    margin-left: 7vw;
+    font-size: 1.5vw;
+    padding: 1vw 1vw;
+    transition: 0.3s;
+    position: relative;
+}
+
+.textContainer:hover {
+    background-color: #e1e8f2;
+    border-bottom: 4px solid #c1cddd;
+    transform: scale(1.01);
+    /* cursor: pointer; */
+}
+
+.news {
+    color: #706f6f;
+    font-size: 1.1vw;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+}
+
+.cardContent {
+    font-size: 1.3vw;
+    padding: 3vw;
+}
+
+.bottom {
+    background-color: #0c2340;
+    height: 110vw;
+    position: relative;
+    margin-bottom: 7vw;
+}
+
+.research {
+    width: 52vw;
+    height: 35vw;
+}
+.campus {
+    width: 52vw;
+    height: 35vw;
+}
+.faculty {
+    width: 52vw;
+    height: 35vw;
+}
+
+.sectionImageBottom1 {
+    position: absolute;
+    top: -2vw;
+}
+
+.sectionContentBottom1 {
+    color: white;
+    position: absolute;
+    top: 5vw;
+    right: 10vw;
+    font-size: 2vw;
+}
+.sectionImageBottom2 {
+    position: absolute;
+    top: 38vw;
+    right: 0;
+}
+
+.sectionContentBottom2 {
+    color: white;
+    position: absolute;
+    top: 45vw;
+    left: 5vw;
+    font-size: 2vw;
+}
+.sectionImageBottom3 {
+    position: absolute;
+    top: 78vw;
+}
+
+.sectionContentBottom3 {
+    color: white;
+    position: absolute;
+    top: 84vw;
+    right: 10vw;
+    font-size: 2vw;
+}
+
+.collegeEvents {
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 5% 45% 5% 45%;
+    margin-bottom: 4vw;
+}
+
+.event {
+    margin: 2vw;
+    margin-left: 0.5vw;
+    font-size: 1.5vw;
+    padding: 2.5vw 1vw;
+    transition: 0.3s;
+    position: relative;
+}
+
+.event:hover {
+    background-color: #e1e8f2;
+    border-bottom: 4px solid #c1cddd;
+    transform: scale(1.01);
+}
+
+.date {
+    text-align: right;
+    color: #092546;
+    padding-top: 2vw;
+}
+
+.dateNumber {
+    font-size: 2vw;
+}
+
+.month {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #0c2340;
+    height: 32vw;
+    position: relative;
+    color: white;
+}
+
+.quickLinks {
+    position: relative;
+    margin-top: 2vw;
+}
+
+.quickLinks ul {
+    display: flex;
+    margin: 2px 2px;
+}
+
+.quickLinks li{
+    display: flex;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.quickLinks li a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    padding: 1vw 1vw;
+    font-size: 1.1vw;
+    transition: 0.3s;
+}
+
+.quickLinks li :hover {
+    background-color: #143865;
+    border-radius: 1vw;
+    color: white;
+}
+
+.quickLinks h4 {
+    color: rgb(218, 218, 218);
+    padding: 1vw 1vw;
+    font-size: 1.1vw;
+}
+
+#qlink:hover {
+    background-color: #0c2340;
+    color: rgb(218, 218, 218);
+}
+
+.footerHeadingDiv {
+    text-align: center;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 26vw;
+}
+
+.social {
+    margin: 4vw 1vw;
+    font-size: 1vw;
+    height: 21vw;
+    position: relative;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-gap: 2vw;
+    margin-bottom: 1vw;
+}
+
+.icon {
+    margin: 1vw auto;
+}
+
+.iconDetails {
+    text-align: justify;
+}
+
+.icon a {
+    color: white;
+    margin: 0.5vw;
+}
+
+.icon a:hover {
+    color: #c1cddd;
+}
+
+.link {
+    position: absolute;
+    right: 0;
+    margin-top: 1vw;
+}
+
+.link a{
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: #ae9142;
+    padding: 1vw;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    cursor: pointer;
+    color: #f3c137;
+    transform: scale(2);
+    background-color: #143865;
+    border-radius: 1vw;
+}
+
+.copyright {
+    position: absolute;
+    right: 12vw;
+    bottom: 5vw;
+}
+
+.link4 a {
+    text-decoration: none;
+    color: #ae9142;
+    font-size: 1.5vw;
+    position: absolute;
+    right: 0;
+    padding: 1vw 1vw;
+    transition: 0.3s;
+}
+
+.link4 a:hover {
+    cursor: pointer;
+    color: #917836;
+    background-color: white;
+    border-radius: 6px;
+    transform: scale(1.03);
+}
+
+.link2 {
+    position: absolute;
+    right: 1vw;
+}
+
+.link2 a {
+    text-decoration: none;
+    color: #ae9142;
+    font-size: 1.3vw;
+    padding: 0.5vw 0.5vw;
+    transition: 0.3s;
+}
+
+.link2 a:hover {
+    cursor: pointer;
+    color: #917836;
+    background-color: white;
+    border-radius: 6px;
+    transform: scale(1.03);
+}
+.link3 {
+    position: absolute;
+    right: 1vw;
+}
+
+.link3 a {
+    text-decoration: none;
+    color: #ae9142;
+    font-size: 1.3vw;
+    padding: 0.5vw 0.5vw;
+    transition: 0.3s;
+}
+
+.link3 a:hover {
+    cursor: pointer;
+    color: #917836;
+    background-color: white;
+    border-radius: 6px;
+    transform: scale(1.03);
+}
+
+.frame {
+    margin-top: 3.5vw;
+}
+
+.table {
+    margin: 3.5vw 5vw;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 0.2vw solid #143865;
+    text-align: left;
+    padding: 0.5vw;
+    font-size: 1vw;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #143865;
+  }
